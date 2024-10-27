@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #375839;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.event-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.event {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.event-info h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #375839;
+}
+
+.event-info p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+/* Estilos para el botón de volver */
+.back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button a {
+    background-color: #375839; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.back-button a:hover {
+    background-color: #45a049; /* Color al pasar el mouse */
+}
