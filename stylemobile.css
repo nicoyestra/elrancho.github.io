@@ -19,10 +19,14 @@ header {
     padding: 20px;
 }
 
+
+
 .logo {
     width: 200px; /* Ajusta el tamaño del logo según necesites */
     height: auto;
-    margin-right: 20px;
+    margin-left: 80%;
+    margin-bottom: 10px;
+ 
 }
 
 nav {
@@ -36,11 +40,24 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
+
 }
 
 nav a {
     color: white;
     text-decoration: none;
+
+}
+
+.contaubi {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
 }
 
 #hero {
@@ -185,7 +202,21 @@ footer {
 /* Estilo para resaltar el menú "Novedades" */
 .highlight {
     color: white;
-    background-color: red;
+    background-color: rgb(143, 76, 76);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.highlight1:hover {
+    background-color: darkred;
+}
+
+.highlight1 {
+    color: white;
+    background-color: rgb(151, 151, 151);
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
@@ -240,5 +271,6 @@ footer {
         padding: 5px;
     }
 }
+
 
 
