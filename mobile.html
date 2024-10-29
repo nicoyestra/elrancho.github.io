@@ -106,7 +106,22 @@
     <footer>
         <p>El Rancho Madariaga © 2024 | elranchomadariaga@gmail.com</p>
     </footer>
-  
+  <!-- Script para redirigir según el tamaño de la pantalla -->
+    <script>
+        function checkScreenSize() {
+            // Redirige si el ancho de la pantalla es menor o igual a 768px
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                window.location.href = "index.html"; // Cambia "mobile.html" por la URL que desees
+            }
+        }
+        
+        // Ejecuta la función cuando se carga la página
+        window.addEventListener("load", checkScreenSize);
+
+        // Vuelve a comprobar si la pantalla se redimensiona
+        window.addEventListener("resize", checkScreenSize);
+
+    </script>
    
     
         <script src ="script.js"> </script> 
